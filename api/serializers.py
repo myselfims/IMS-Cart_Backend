@@ -52,6 +52,11 @@ class AddressSerializer(serializers.ModelSerializer):
     class Meta:
         model = Address
         fields = '__all__'
+        
+class PromoCodeSeriazlizer(serializers.ModelSerializer):
+    class Meta:
+        model = PromoCode
+        fields = '__all__'
     
         
         

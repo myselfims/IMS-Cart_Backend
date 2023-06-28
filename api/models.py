@@ -82,3 +82,10 @@ class Address(models.Model):
     
     def __str__(self) -> str:
         return self.city+'--'+self.pincode
+    
+class PromoCode(models.Model):
+    code = models.CharField(max_length=10)
+    discount = models.IntegerField()
+    
+    def __str__(self) -> str:
+        return self.code

@@ -235,3 +235,17 @@ class UserDetaialView(APIView):
                              "state":''
                             })
 
+
+class VerifyPromoView(APIView):
+    permission_classes = [AllowAny]
+    authentication_classes = []
+    
+    def post(self,request):
+        try:
+            code = request.data['promo_code']
+            print(code)
+            obj = PromoCode.objects.get(code=code)
+            objser = PromoCodeSeriazlizer(obj)
+            return Response(objser.data)      
+        except:
+            return Response({'status':False,'message':'Promo code not found!'},status=404)

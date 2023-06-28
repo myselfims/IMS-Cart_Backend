@@ -15,6 +15,7 @@ router.register(r"wishlist",WishlistViewSet)
 
 
 
+
 urlpatterns = [
     path('',include(router.urls)),
     path("products/", ProductsView.as_view(), name="products"),
@@ -23,4 +24,5 @@ urlpatterns = [
     path("tokenrefresh/",jwt_views.TokenRefreshView.as_view()),
     path("tokenverify/",jwt_views.TokenVerifyView.as_view()),
     path("getuser/",UserDetaialView.as_view(),name='getuser'),
+    path("verifypromo/",VerifyPromoView.as_view(),name='promocode'),
 ]
