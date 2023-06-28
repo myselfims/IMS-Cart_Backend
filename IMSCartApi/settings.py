@@ -28,6 +28,7 @@ SECRET_KEY = 'django-insecure-dysyyrd!3a3n4=g=zh=pstru#tv&4#2_o2ir581ra3hr01_&z^
 DEBUG = False
 
 ALLOWED_HOSTS = ['https://imscart.riseimstechnologies.com/','*']
+CSRF_TRUSTED_ORIGINS = ['https://imscart.riseimstechnologies.com/']
 
 
 # Application definition
