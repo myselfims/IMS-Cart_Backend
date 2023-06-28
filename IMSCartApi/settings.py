@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-dysyyrd!3a3n4=g=zh=pstru#tv&4#2_o2ir581ra3hr01_&z^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['https://imscart.riseimstechnologies.com/','*']
 CSRF_TRUSTED_ORIGINS = ['https://imscart.riseimstechnologies.com/','*']
